@@ -1,0 +1,264 @@
+/* 通用樣式 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    background-color: #2C3E50; /* 深藍色 */
+    color: #ECF0F1; /* 淺灰色 */
+    padding: 12px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F39C12; /* 黃金色 */
+}
+
+/* 頁首部分 */
+.hero {
+    background-color: #34495E; /* 深灰藍色 */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 4px solid #F39C12; /* 黃金色邊框 */
+}
+
+.hero .profile-photo {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+/* 主要內容區 */
+main {
+    padding: 60px 10%;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    font-weight: 700;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* 自我介紹區域 */
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7F8C8D; /* 淺灰色 */
+    font-weight: 400;
+}
+
+/* 標語區域 */
+.slogan p {
+    font-size: 22px;
+    font-style: italic;
+    color: #7F8C8D;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 學歷區域 */
+.education .school {
+    margin-bottom: 25px;
+    background-color: #ECF0F1; /* 米白色背景 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education .degree {
+    font-size: 16px;
+    color: #7F8C8D;
+    font-weight: 500;
+}
+
+/* 技能區域 */
+.skills .skill-chart {
+    margin-top: 30px;
+}
+
+.skills .skill {
+    margin-bottom: 30px;
+}
+
+.skills label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.progress-bar {
+    background-color: #BDC3C7; /* 淺灰色 */
+    height: 12px;
+    border-radius: 8px;
+    transition: width 0.5s;
+}
+
+#python {
+    background-color: #3498DB; /* 藍色 */
+}
+
+#javascript {
+    background-color: #F39C12; /* 黃金色 */
+}
+
+#data-analysis {
+    background-color: #2ECC71; /* 綠色 */
+}
+
+#presentation {
+    background-color: #E74C3C; /* 紅色 */
+}
+
+/* 活動經歷區域 */
+.activities .activity {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.activities .activity-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 25px;
+    border: 3px solid #BDC3C7; /* 灰色邊框 */
+}
+
+.activities .activity-info {
+    max-width: 800px;
+}
+
+.activities .date-location {
+    font-size: 14px;
+    color: #7F8C8D;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.activities h3 {
+    font-size: 20px;
+    color: #2C3E50;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* 聯絡方式區域 */
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 18px;
+    margin: 12px 0;
+    font-weight: 500;
+    color: #7F8C8D;
+}
+
+.contact a {
+    color: #3498DB; /* 藍色 */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* 頁腳區域 */
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 小型設備樣式調整 */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 5%;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .skills .progress-bar {
+        height: 8px;
+    }
+
+    .activities .activity {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activities .activity-photo {
+        margin-bottom: 10px;
+    }
+}
